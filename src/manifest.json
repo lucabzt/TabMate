@@ -2,6 +2,9 @@
   "manifest_version": 3,
   "name": "TabMate",
   "description": "A chrome extension for managing your Tabs",
+  "key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUExSEVUM01rNVhLbjMyTkhUNzQyMQpkTGk1N0FZN3RUWEdoODVCVTN5ZU0zWHlWUllLNm1LZW9kWDhYV2pVb3RYNFVKaTBCMkVwNDhNQVdUdTh0eURrCjdJT25JYU9SbmF2TjZIL2tBVFB1VE01TlNmZmowV25qbER4UitDa0U4cWFsbE0ydU80cW5NdjQyVCtXUk8yRXYKRTAyNk1xTGVFdlU3WnlJTnFLTnFnZW1lS3lYY1BVZkFiMGhkS05nRkNCdWRLTHZNc2Q1Y3FuZDBxSDBROTRmeQpWbHl3YmRrUW5JN2xhZ0ZTUEswR3FhMGlHVitGenhpVEZMNnRzOFJEeURlZTcxdTlCMWVVTzJtU3ltdFRyV21MCi9hU3pjRUN2MmIxWnY5aHk5cW9udERSMDJ4VkVIWDVmd21ZSEwxbXRTM1Rsdk03clM0NVErcXJDci9SNmM3enkKVHdJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==",
+  "permissions": ["aiLanguageModelOriginTrial"],
+  "trial_tokens": ["AjinXl0Gi27vpuztz3fx3ew40yqTMs9UKWolSwMMSVZoqzd1npMv2r3AVzgFgwxpsiSDBBbVWD2iaoPF5Guq7AgAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vZG1jbmZnaWZmY2RjZ29wYWpwbmVmaGRsaW9laG1iYm0iLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"],
   "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
