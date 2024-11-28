@@ -1,18 +1,9 @@
-console.log('Background page loaded.');
+import Model from './model';
 
-if (chrome.aiOriginTrial && chrome.aiOriginTrial.languageModel) {
-  console.log('Prompt API is available.');
+// Initialize model
+const model = new Model();
+await model.init()
 
-  async function groupTabs() {
-    try {
-      const model = await chrome.aiOriginTrial.languageModel.capabilities();
-      console.log('Language Model Capabilities:', model);
-    } catch (err) {
-      console.error('Error calling language model capabilities:', err);
-    }
-  }
-
-  groupTabs();
-} else {
-  console.error('Prompt API is not available. Check manifest.json and trial tokens.');
-}
+// First try prompting the model
+const result = await model.prompt("How are you doing today?")
+console.log(result)
