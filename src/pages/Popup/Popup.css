@@ -1,24 +1,84 @@
-.App {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  height: 100%;
-  padding: 10px;
-  background-color: #0c5177;
+html, body {
 }
 
-.GroupTabs {
-    width: 90%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #000dff;
+.App {
+    width: 100%;
+    box-sizing: border-box; /* Includes padding and border in the width */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack buttons vertically */
+    background-color: #0c5177; /* Blue background */
+    padding: 25px 10px 5px 10px;
+    color: white;
+    font-size: small;
+    gap: 15px
+}
+
+.Buttons {
+    display: flex; /* Flexbox container for uniform width */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Stretch buttons to the container's width */
+    gap: 7px; /* Space between buttons */
+    padding: 15px 8px;
+    border: 2px solid #ffffff; /* Add a visible border */
+    border-radius: 10px; /* Optional: Rounded corners for the border */
+}
+
+.ActionButton {
+    font-size: 16px; /* Ensure readable text size */
+    background-color: #1c28aa; /* Blue button */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: block;
-    margin: 10px auto;
+    display: flex; /* Center text inside buttons */
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    text-align: center; /* Center text alignment */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Button shadow */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    padding: 10px; /* Add internal padding for text */
 }
+
+.ActionButton:hover {
+    background-color: #003eff; /* Lighter shade on hover */
+}
+
+.AddButton {
+    font-size: 16px; /* Ensure readable text size */
+    background-color: #0c5177; /* Blue button */
+    color: gray;
+    cursor: pointer;
+    display: flex; /* Center text inside buttons */
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    text-align: center; /* Center text alignment */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    padding: 10px; /* Add internal padding for text */
+    border: 2px dashed rgba(255, 255, 255, 0.62); /* Add a visible border */
+    border-radius: 5px; /* Optional: Rounded corners for the border */
+}
+
+.TextBoxInput {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.TextBoxInput:focus {
+    border-color: #0c5177;
+}
+
+
+
+
+
+

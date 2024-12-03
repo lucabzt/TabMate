@@ -1,17 +1,16 @@
 import Model from './model';
-import group_tabs from './group_tabs';
 import TabManager from './tab_manager';
+import { creationPrompt, groupingPrompt } from './prompts';
 
-// Initialize model
-const model = new Model();
-await model.init();
+// Initialize models
+const NamingModel = new Model();
+await NamingModel.init(creationPrompt);
 
-// First try prompting the model
-const result = await model.prompt("How are you doing today?");
-console.log(result);
+const GroupingModel = new Model();
+await GroupingModel.init(groupingPrompt);
 
 // Init TabManager
-const manager = new TabManager(model);
+const manager = new TabManager(NamingModel, GroupingModel);
 await manager.updateActiveTabs();
 
 // Group Tabs

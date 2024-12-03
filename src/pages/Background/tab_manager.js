@@ -30,13 +30,14 @@ import group_tabs from './group_tabs';
 const DEFAULT_CONTENT = "No content summary available. Use url to guess content.";
 
 class TabManager {
-  constructor (model) {
-    this.model = model
+  constructor (naming_model, grouping_model) {
+    this.namingModel = naming_model;
+    this.groupingModel = grouping_model;
     this.active_tabs = null
   }
 
   async groupTabs () {
-    await group_tabs(this.model, this.active_tabs)
+    await group_tabs(this.namingModel, this.groupingModel, this.active_tabs)
   }
 
   async updateActiveTabs() {
