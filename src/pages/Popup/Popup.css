@@ -77,6 +77,53 @@ html, body {
     border-color: #0c5177;
 }
 
+.Thinking {
+    font-size: 16px;
+    background: linear-gradient(270deg, #010559, #b4bcff);
+    background-size: 250% 250%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    animation: gradientAnimation 1s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Wave animation for individual letters */
+.wave-text {
+    display: inline-flex; /* Letters align horizontally */
+}
+
+.wave-text span {
+    display: inline-block; /* Needed for transform animations */
+    animation: wave 1s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    50% {
+        transform: translateY(-1px); /* Move up */
+    }
+}
+
 
 
 
