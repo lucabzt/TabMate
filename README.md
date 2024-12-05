@@ -1,1 +1,1 @@
-<img src="src/assets/img/tabmate.jpg" width="64"/>
+<img src="src/assets/img/tabmate.jpg"/>
